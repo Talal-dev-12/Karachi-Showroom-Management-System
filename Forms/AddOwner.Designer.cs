@@ -46,6 +46,9 @@
             this.txtNoPlate = new System.Windows.Forms.TextBox();
             this.txtRegFees = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -225,11 +228,39 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Add Owners Details ";
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Navy;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(12, 1019);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(178, 62);
+            this.btnBack.TabIndex = 16;
+            this.btnBack.Text = "< Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.BackColor = System.Drawing.Color.Transparent;
+            this.Exit.Image = global::Karachi_Showroom_System.Properties.Resources.cross_235;
+            this.Exit.Location = new System.Drawing.Point(1295, 12);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(100, 77);
+            this.Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Exit.TabIndex = 15;
+            this.Exit.TabStop = false;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // AddOwner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1407, 1093);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
@@ -253,6 +284,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Check";
             this.Load += new System.EventHandler(this.AddOwner_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,5 +310,7 @@
         private System.Windows.Forms.TextBox txtNoPlate;
         private System.Windows.Forms.TextBox txtRegFees;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.PictureBox Exit;
     }
 }

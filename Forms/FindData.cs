@@ -57,10 +57,7 @@ namespace Karachi_Showroom_System.Forms
         }
 
 
-        private void Exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
         private void btnBack_Click_1(object sender, EventArgs e)
         {
@@ -68,6 +65,11 @@ namespace Karachi_Showroom_System.Forms
             DashBoard dashBoard = new DashBoard();
             dashBoard.Show();
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

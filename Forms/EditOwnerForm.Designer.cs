@@ -262,7 +262,7 @@
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(12, 1051);
+            this.btnBack.Location = new System.Drawing.Point(26, 1035);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(178, 62);
             this.btnBack.TabIndex = 14;
@@ -272,7 +272,8 @@
             // 
             // Exit
             // 
-            this.Exit.BackColor = System.Drawing.Color.IndianRed;
+            this.Exit.BackColor = System.Drawing.Color.Transparent;
+            this.Exit.Image = global::Karachi_Showroom_System.Properties.Resources.cross_235;
             this.Exit.Location = new System.Drawing.Point(1451, 12);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(100, 77);

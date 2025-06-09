@@ -75,5 +75,22 @@ namespace Karachi_Showroom_System.Forms
             mainForm.Show();
             this.Hide();
         }
+
+        private void DashBoard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            LoginPage mainForm = new LoginPage();
+            mainForm.Show();
+            this.Hide();
+        }
     }
 }

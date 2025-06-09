@@ -35,10 +35,10 @@
             this.txtPhoneNo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvOwnerDetails = new System.Windows.Forms.DataGridView();
-            this.Exit = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOwnerDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // SearchBtn
@@ -109,18 +109,8 @@
             this.dgvOwnerDetails.Name = "dgvOwnerDetails";
             this.dgvOwnerDetails.RowHeadersWidth = 82;
             this.dgvOwnerDetails.RowTemplate.Height = 33;
-            this.dgvOwnerDetails.Size = new System.Drawing.Size(1461, 537);
+            this.dgvOwnerDetails.Size = new System.Drawing.Size(1461, 337);
             this.dgvOwnerDetails.TabIndex = 10;
-            // 
-            // Exit
-            // 
-            this.Exit.Location = new System.Drawing.Point(1373, 12);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(100, 77);
-            this.Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Exit.TabIndex = 11;
-            this.Exit.TabStop = false;
-            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // btnBack
             // 
@@ -128,7 +118,7 @@
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(12, 1108);
+            this.btnBack.Location = new System.Drawing.Point(12, 919);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(178, 62);
             this.btnBack.TabIndex = 12;
@@ -136,13 +126,24 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Karachi_Showroom_System.Properties.Resources.cross_235;
+            this.pictureBox1.Location = new System.Drawing.Point(1373, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // FindData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1485, 1182);
+            this.ClientSize = new System.Drawing.Size(1485, 999);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.Exit);
             this.Controls.Add(this.dgvOwnerDetails);
             this.Controls.Add(this.txtPhoneNo);
             this.Controls.Add(this.label5);
@@ -155,7 +156,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FindData";
             ((System.ComponentModel.ISupportInitialize)(this.dgvOwnerDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,7 +171,7 @@
         private System.Windows.Forms.TextBox txtPhoneNo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgvOwnerDetails;
-        private System.Windows.Forms.PictureBox Exit;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

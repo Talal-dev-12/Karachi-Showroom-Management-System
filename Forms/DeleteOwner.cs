@@ -106,5 +106,22 @@ namespace Karachi_Showroom_System.Forms
             }
 
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DashBoard dashBoard = new DashBoard();
+            dashBoard.Show();
+            this.Close();
+        }
+
+        private void DeleteOwner_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

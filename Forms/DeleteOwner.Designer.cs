@@ -34,7 +34,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgvOwner = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOwner)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
             this.SuspendLayout();
             // 
             // SearchBtn
@@ -106,11 +110,53 @@
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Navy;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(-264, 1127);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(178, 62);
+            this.btnBack.TabIndex = 16;
+            this.btnBack.Text = "< Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            // 
+            // Exit
+            // 
+            this.Exit.BackColor = System.Drawing.Color.Transparent;
+            this.Exit.Image = global::Karachi_Showroom_System.Properties.Resources.cross_235;
+            this.Exit.Location = new System.Drawing.Point(1176, 12);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(100, 77);
+            this.Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Exit.TabIndex = 15;
+            this.Exit.TabStop = false;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Navy;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(12, 1014);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 62);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "< Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // DeleteOwner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1287, 1060);
+            this.ClientSize = new System.Drawing.Size(1288, 1101);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.dgvOwner);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.SearchBtn);
@@ -121,7 +167,9 @@
             this.Name = "DeleteOwner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeleteOwner";
+            this.Load += new System.EventHandler(this.DeleteOwner_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOwner)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +183,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvOwner;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.PictureBox Exit;
+        private System.Windows.Forms.Button button1;
     }
 }

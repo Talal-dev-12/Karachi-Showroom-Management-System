@@ -15,9 +15,11 @@ namespace Karachi_Showroom_System
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginPage());
+             Application.EnableVisualStyles();
+             Application.SetCompatibleTextRenderingDefault(false);
+             Application.Run(new LoginPage());
+           
+
         }
     }
 }

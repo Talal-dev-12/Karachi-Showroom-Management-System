@@ -31,12 +31,12 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblPass = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Logo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +51,6 @@
             this.lblName.Size = new System.Drawing.Size(172, 48);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Username :";
-            
             // 
             // lblPass
             // 
@@ -73,29 +72,6 @@
             this.label1.Size = new System.Drawing.Size(604, 48);
             this.label1.TabIndex = 3;
             this.label1.Text = "Karachi Showroom Management System";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::Karachi_Showroom_System.Properties.Resources.cross_23;
-            this.pictureBox1.Location = new System.Drawing.Point(1114, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 58);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // Logo
-            // 
-            this.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Logo.Image = global::Karachi_Showroom_System.Properties.Resources.Logo;
-            this.Logo.Location = new System.Drawing.Point(425, 132);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(389, 326);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo.TabIndex = 0;
-            this.Logo.TabStop = false;
             // 
             // label2
             // 
@@ -142,6 +118,28 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(585, 44);
             this.txtUsername.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Karachi_Showroom_System.Properties.Resources.cross_235;
+            this.pictureBox1.Location = new System.Drawing.Point(1098, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // Logo
+            // 
+            this.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Logo.Image = global::Karachi_Showroom_System.Properties.Resources._11;
+            this.Logo.Location = new System.Drawing.Point(425, 132);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(389, 326);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 0;
+            this.Logo.TabStop = false;
             // 
             // LoginPage
             // 
