@@ -1,16 +1,29 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Karachi_Showroom_System.Forms
 {
     public partial class LoginPage : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
-string connString = "server=localhost;user=root;database=Karachi_motor_showroom;port=3307;password=1234;";
+        private static extern IntPtr CreateRoundRectRgn
+               (
+               int nLeftRect,
+               int nTopRect,
+               int nRightRect,
+               int nBottomRect,
+               int nWidthEllipse,
+               int nHeightEllipse
+
+               );
+                        string connString = "server=localhost;user=root;database=Karachi_motor_showroom;port=3307;password=1234;";
     public LoginPage()
         {
             InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
@@ -46,6 +59,11 @@ string connString = "server=localhost;user=root;database=Karachi_motor_showroom;
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+
+        }
+
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
 
         }
     }

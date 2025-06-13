@@ -46,21 +46,25 @@
             this.txtEngine = new System.Windows.Forms.TextBox();
             this.txtNoPlat = new System.Windows.Forms.TextBox();
             this.txtAID = new System.Windows.Forms.TextBox();
-            this.updateBtn = new System.Windows.Forms.Button();
-            this.SearchBtn = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.SearchBtn = new System.Windows.Forms.Button();
+            this.updateBtn = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(352, 744);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(41, 317);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 56);
+            this.label1.Size = new System.Drawing.Size(93, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chasis No:";
             // 
@@ -68,9 +72,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(328, 187);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(48, 26);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 56);
+            this.label2.Size = new System.Drawing.Size(86, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "Owner ID:";
             // 
@@ -78,9 +84,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(303, 373);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(24, 124);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(240, 56);
+            this.label3.Size = new System.Drawing.Size(119, 28);
             this.label3.TabIndex = 1;
             this.label3.Text = "Owner Name:";
             // 
@@ -88,9 +96,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(457, 437);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(94, 157);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 56);
+            this.label4.Size = new System.Drawing.Size(42, 28);
             this.label4.TabIndex = 1;
             this.label4.Text = "NIC:";
             // 
@@ -98,9 +108,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(362, 510);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(45, 195);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 56);
+            this.label5.Size = new System.Drawing.Size(89, 28);
             this.label5.TabIndex = 1;
             this.label5.Text = "Phone No:";
             // 
@@ -108,9 +120,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(295, 585);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(8, 234);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(254, 56);
+            this.label6.Size = new System.Drawing.Size(126, 28);
             this.label6.TabIndex = 1;
             this.label6.Text = "Vehicle Name:";
             // 
@@ -118,9 +132,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(355, 668);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(41, 277);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(188, 56);
+            this.label7.Size = new System.Drawing.Size(93, 28);
             this.label7.TabIndex = 1;
             this.label7.Text = "Engine No:";
             // 
@@ -128,9 +144,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(358, 891);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(48, 393);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(174, 56);
+            this.label8.Size = new System.Drawing.Size(86, 28);
             this.label8.TabIndex = 1;
             this.label8.Text = "Reg Fees:";
             // 
@@ -138,186 +156,216 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(369, 819);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(54, 356);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(163, 56);
+            this.label9.Size = new System.Drawing.Size(80, 28);
             this.label9.TabIndex = 1;
             this.label9.Text = "No Plate:";
             // 
             // txtOwnerName
             // 
             this.txtOwnerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOwnerName.Location = new System.Drawing.Point(570, 377);
+            this.txtOwnerName.Location = new System.Drawing.Point(157, 126);
+            this.txtOwnerName.Margin = new System.Windows.Forms.Padding(2);
             this.txtOwnerName.Name = "txtOwnerName";
-            this.txtOwnerName.Size = new System.Drawing.Size(625, 44);
+            this.txtOwnerName.Size = new System.Drawing.Size(314, 26);
             this.txtOwnerName.TabIndex = 2;
             // 
             // txtNIC
             // 
             this.txtNIC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNIC.Location = new System.Drawing.Point(570, 437);
+            this.txtNIC.Location = new System.Drawing.Point(157, 159);
+            this.txtNIC.Margin = new System.Windows.Forms.Padding(2);
             this.txtNIC.Name = "txtNIC";
-            this.txtNIC.Size = new System.Drawing.Size(625, 44);
+            this.txtNIC.Size = new System.Drawing.Size(314, 26);
             this.txtNIC.TabIndex = 2;
             // 
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(570, 514);
+            this.txtPhone.Location = new System.Drawing.Point(157, 194);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(625, 44);
+            this.txtPhone.Size = new System.Drawing.Size(314, 26);
             this.txtPhone.TabIndex = 2;
             // 
             // txtVehicle
             // 
             this.txtVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVehicle.Location = new System.Drawing.Point(570, 585);
+            this.txtVehicle.Location = new System.Drawing.Point(157, 234);
+            this.txtVehicle.Margin = new System.Windows.Forms.Padding(2);
             this.txtVehicle.Name = "txtVehicle";
-            this.txtVehicle.Size = new System.Drawing.Size(625, 44);
+            this.txtVehicle.Size = new System.Drawing.Size(314, 26);
             this.txtVehicle.TabIndex = 2;
             // 
             // txtChasis
             // 
             this.txtChasis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChasis.Location = new System.Drawing.Point(570, 748);
+            this.txtChasis.Location = new System.Drawing.Point(157, 316);
+            this.txtChasis.Margin = new System.Windows.Forms.Padding(2);
             this.txtChasis.Name = "txtChasis";
-            this.txtChasis.Size = new System.Drawing.Size(625, 44);
+            this.txtChasis.Size = new System.Drawing.Size(314, 26);
             this.txtChasis.TabIndex = 2;
             // 
             // txtFees
             // 
             this.txtFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFees.Location = new System.Drawing.Point(570, 895);
+            this.txtFees.Location = new System.Drawing.Point(157, 392);
+            this.txtFees.Margin = new System.Windows.Forms.Padding(2);
             this.txtFees.Name = "txtFees";
-            this.txtFees.Size = new System.Drawing.Size(625, 44);
+            this.txtFees.Size = new System.Drawing.Size(314, 26);
             this.txtFees.TabIndex = 2;
             // 
             // txtEngine
             // 
             this.txtEngine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEngine.Location = new System.Drawing.Point(570, 672);
+            this.txtEngine.Location = new System.Drawing.Point(157, 276);
+            this.txtEngine.Margin = new System.Windows.Forms.Padding(2);
             this.txtEngine.Name = "txtEngine";
-            this.txtEngine.Size = new System.Drawing.Size(625, 44);
+            this.txtEngine.Size = new System.Drawing.Size(314, 26);
             this.txtEngine.TabIndex = 2;
             // 
             // txtNoPlat
             // 
             this.txtNoPlat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoPlat.Location = new System.Drawing.Point(570, 823);
+            this.txtNoPlat.Location = new System.Drawing.Point(157, 356);
+            this.txtNoPlat.Margin = new System.Windows.Forms.Padding(2);
             this.txtNoPlat.Name = "txtNoPlat";
-            this.txtNoPlat.Size = new System.Drawing.Size(625, 44);
+            this.txtNoPlat.Size = new System.Drawing.Size(314, 26);
             this.txtNoPlat.TabIndex = 2;
             // 
             // txtAID
             // 
             this.txtAID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAID.Location = new System.Drawing.Point(570, 191);
+            this.txtAID.Location = new System.Drawing.Point(157, 26);
+            this.txtAID.Margin = new System.Windows.Forms.Padding(2);
             this.txtAID.Name = "txtAID";
-            this.txtAID.Size = new System.Drawing.Size(625, 44);
+            this.txtAID.Size = new System.Drawing.Size(314, 26);
             this.txtAID.TabIndex = 2;
-            // 
-            // updateBtn
-            // 
-            this.updateBtn.BackColor = System.Drawing.Color.MidnightBlue;
-            this.updateBtn.FlatAppearance.BorderSize = 0;
-            this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateBtn.ForeColor = System.Drawing.Color.White;
-            this.updateBtn.Location = new System.Drawing.Point(729, 982);
-            this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(236, 58);
-            this.updateBtn.TabIndex = 3;
-            this.updateBtn.Text = "Update";
-            this.updateBtn.UseVisualStyleBackColor = false;
-            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
-            // 
-            // SearchBtn
-            // 
-            this.SearchBtn.BackColor = System.Drawing.Color.Navy;
-            this.SearchBtn.FlatAppearance.BorderSize = 0;
-            this.SearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SearchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchBtn.ForeColor = System.Drawing.Color.White;
-            this.SearchBtn.Location = new System.Drawing.Point(748, 283);
-            this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(217, 61);
-            this.SearchBtn.TabIndex = 3;
-            this.SearchBtn.Text = "Search ";
-            this.SearchBtn.UseVisualStyleBackColor = false;
-            this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(605, 48);
+            this.label10.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(0, 20);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(503, 84);
+            this.label10.Size = new System.Drawing.Size(951, 40);
             this.label10.TabIndex = 1;
             this.label10.Text = "Edit Owners Details ";
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.Navy;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(26, 1035);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(178, 62);
-            this.btnBack.TabIndex = 14;
-            this.btnBack.Text = "< Back";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Exit
             // 
             this.Exit.BackColor = System.Drawing.Color.Transparent;
             this.Exit.Image = global::Karachi_Showroom_System.Properties.Resources.cross_235;
-            this.Exit.Location = new System.Drawing.Point(1451, 12);
+            this.Exit.Location = new System.Drawing.Point(890, 7);
+            this.Exit.Margin = new System.Windows.Forms.Padding(2);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(100, 77);
+            this.Exit.Size = new System.Drawing.Size(50, 40);
             this.Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Exit.TabIndex = 13;
             this.Exit.TabStop = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click_1);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.txtAID);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.SearchBtn);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txtFees);
+            this.panel1.Controls.Add(this.txtNoPlat);
+            this.panel1.Controls.Add(this.updateBtn);
+            this.panel1.Controls.Add(this.txtEngine);
+            this.panel1.Controls.Add(this.txtChasis);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txtVehicle);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.txtPhone);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtNIC);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.txtOwnerName);
+            this.panel1.Location = new System.Drawing.Point(230, 77);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(530, 488);
+            this.panel1.TabIndex = 15;
+            // 
+            // SearchBtn
+            // 
+            this.SearchBtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.SearchBtn.FlatAppearance.BorderSize = 0;
+            this.SearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchBtn.Font = new System.Drawing.Font("Poppins", 11.25F);
+            this.SearchBtn.ForeColor = System.Drawing.Color.White;
+            this.SearchBtn.Location = new System.Drawing.Point(213, 69);
+            this.SearchBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchBtn.Name = "SearchBtn";
+            this.SearchBtn.Size = new System.Drawing.Size(159, 36);
+            this.SearchBtn.TabIndex = 3;
+            this.SearchBtn.Text = "Search ";
+            this.SearchBtn.UseVisualStyleBackColor = false;
+            this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
+            // 
+            // updateBtn
+            // 
+            this.updateBtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.updateBtn.FlatAppearance.BorderSize = 0;
+            this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updateBtn.Font = new System.Drawing.Font("Poppins", 11.25F);
+            this.updateBtn.ForeColor = System.Drawing.Color.White;
+            this.updateBtn.Location = new System.Drawing.Point(213, 433);
+            this.updateBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(159, 36);
+            this.updateBtn.TabIndex = 3;
+            this.updateBtn.Text = "Update";
+            this.updateBtn.UseVisualStyleBackColor = false;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Poppins", 11.25F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(0, 541);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(159, 36);
+            this.btnBack.TabIndex = 14;
+            this.btnBack.Text = "< Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // EditOwnerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1563, 1125);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.ClientSize = new System.Drawing.Size(951, 577);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.Exit);
-            this.Controls.Add(this.SearchBtn);
-            this.Controls.Add(this.updateBtn);
-            this.Controls.Add(this.txtNoPlat);
-            this.Controls.Add(this.txtEngine);
-            this.Controls.Add(this.txtFees);
-            this.Controls.Add(this.txtChasis);
-            this.Controls.Add(this.txtVehicle);
-            this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.txtNIC);
-            this.Controls.Add(this.txtAID);
-            this.Controls.Add(this.txtOwnerName);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditOwnerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditOwnerForm";
             this.Load += new System.EventHandler(this.EditOwnerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -341,10 +389,11 @@
         private System.Windows.Forms.TextBox txtEngine;
         private System.Windows.Forms.TextBox txtNoPlat;
         private System.Windows.Forms.TextBox txtAID;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox Exit;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.Button SearchBtn;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.PictureBox Exit;
     }
 }
