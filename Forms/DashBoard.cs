@@ -18,24 +18,17 @@ namespace Karachi_Showroom_System.Forms
     {
         private Timer delayTimer;
         private Form nextFormToShow;
+        Guna.UI2.WinForms.Guna2Elipse elipsee;
 
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
-        private static extern IntPtr CreateRoundRectRgn
-                (
-                int nLeftRect,
-                int nTopRect,
-                int nRightRect,
-                int nBottomRect,
-                int nWidthEllipse,
-                int nHeightEllipse
-
-                );
         public DashBoard()
         {
+           
             InitializeComponent();
             AlignNavLine(DisplayDataOwnersBtn);
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            elipsee = new Guna.UI2.WinForms.Guna2Elipse();
+            elipsee.TargetControl = this; // Makes the form rounded
+            elipsee.BorderRadius = 30;
         }
         private void OpenFormWithDelay(Form form)
         {
