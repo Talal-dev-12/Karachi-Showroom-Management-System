@@ -17,7 +17,6 @@ namespace Karachi_Showroom_System.Forms
         int nBottomRect,
         int nWidthEllipse,
         int nHeightEllipse
-
         );
         public AddOwner()
         {
