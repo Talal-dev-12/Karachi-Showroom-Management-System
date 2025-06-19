@@ -35,12 +35,12 @@
             this.txtPhoneNo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvOwnerDetails = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.btnBack = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.BtnExit = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOwnerDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).BeginInit();
             this.SuspendLayout();
             // 
             // SearchBtn
@@ -124,18 +124,6 @@
             this.dgvOwnerDetails.Size = new System.Drawing.Size(856, 175);
             this.dgvOwnerDetails.TabIndex = 10;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Karachi_Showroom_System.Properties.Resources.cross_235;
-            this.pictureBox1.Location = new System.Drawing.Point(900, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
@@ -152,20 +140,35 @@
             // 
             // btnBack
             // 
-            this.btnBack.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Poppins", 11.25F);
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.Transparent;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(0, 541);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Image = global::Karachi_Showroom_System.Properties.Resources.back;
+            this.btnBack.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnBack.Location = new System.Drawing.Point(2, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Padding = new System.Windows.Forms.Padding(15, 0, 20, 0);
-            this.btnBack.Size = new System.Drawing.Size(159, 36);
-            this.btnBack.TabIndex = 12;
-            this.btnBack.Text = "< Back";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
+            this.btnBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 21;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // BtnExit
+            // 
+            this.BtnExit.FillColor = System.Drawing.Color.Transparent;
+            this.BtnExit.Image = global::Karachi_Showroom_System.Properties.Resources.Exit;
+            this.BtnExit.ImageRotate = 0F;
+            this.BtnExit.Location = new System.Drawing.Point(905, 2);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.BtnExit.Size = new System.Drawing.Size(46, 46);
+            this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnExit.TabIndex = 22;
+            this.BtnExit.TabStop = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // FindData
             // 
@@ -173,7 +176,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
@@ -184,9 +187,9 @@
             this.Text = "FindData";
             this.Load += new System.EventHandler(this.FindData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOwnerDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -200,8 +203,8 @@
         private System.Windows.Forms.TextBox txtPhoneNo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgvOwnerDetails;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnBack;
+        private Guna.UI2.WinForms.Guna2CircleButton btnBack;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox BtnExit;
     }
 }

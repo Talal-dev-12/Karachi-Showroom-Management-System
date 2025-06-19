@@ -36,21 +36,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.BtnAdd = new System.Windows.Forms.Button();
-            this.txtOwnerName = new System.Windows.Forms.TextBox();
-            this.txtNIC = new System.Windows.Forms.TextBox();
-            this.txtPhone = new System.Windows.Forms.TextBox();
-            this.txtVehicleName = new System.Windows.Forms.TextBox();
-            this.txtEngineNo = new System.Windows.Forms.TextBox();
-            this.txtChasisNo = new System.Windows.Forms.TextBox();
-            this.txtNoPlate = new System.Windows.Forms.TextBox();
-            this.txtRegFees = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.Exit = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
+            this.BtnAddGuna = new Guna.UI2.WinForms.Guna2Button();
+            this.txtOwnerName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNIC = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEngineNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtChasisNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNoPlate = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtRegFees = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cmbVehicleName = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnBack = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.BtnExit = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,7 +59,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(124, 64);
+            this.label1.Location = new System.Drawing.Point(124, 79);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 28);
@@ -72,7 +72,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(102, 99);
+            this.label2.Location = new System.Drawing.Point(102, 122);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 28);
@@ -85,7 +85,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(40, 146);
+            this.label3.Location = new System.Drawing.Point(40, 165);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 28);
@@ -98,7 +98,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(72, 188);
+            this.label4.Location = new System.Drawing.Point(73, 207);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 28);
@@ -111,7 +111,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(76, 238);
+            this.label5.Location = new System.Drawing.Point(77, 249);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 28);
@@ -124,7 +124,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(85, 283);
+            this.label6.Location = new System.Drawing.Point(86, 293);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 28);
@@ -137,7 +137,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(80, 331);
+            this.label7.Location = new System.Drawing.Point(80, 341);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 28);
@@ -150,176 +150,258 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(46, 25);
+            this.label8.Location = new System.Drawing.Point(47, 36);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(123, 28);
             this.label8.TabIndex = 0;
             this.label8.Text = "Owner Name :";
             // 
-            // BtnAdd
-            // 
-            this.BtnAdd.BackColor = System.Drawing.Color.RoyalBlue;
-            this.BtnAdd.FlatAppearance.BorderSize = 0;
-            this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAdd.Font = new System.Drawing.Font("Poppins", 11.25F);
-            this.BtnAdd.ForeColor = System.Drawing.Color.White;
-            this.BtnAdd.Location = new System.Drawing.Point(177, 382);
-            this.BtnAdd.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(159, 36);
-            this.BtnAdd.TabIndex = 1;
-            this.BtnAdd.Text = "ADD";
-            this.BtnAdd.UseVisualStyleBackColor = false;
-            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
-            // 
-            // txtOwnerName
-            // 
-            this.txtOwnerName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOwnerName.Location = new System.Drawing.Point(186, 28);
-            this.txtOwnerName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtOwnerName.Name = "txtOwnerName";
-            this.txtOwnerName.Size = new System.Drawing.Size(258, 27);
-            this.txtOwnerName.TabIndex = 2;
-            // 
-            // txtNIC
-            // 
-            this.txtNIC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNIC.Location = new System.Drawing.Point(186, 68);
-            this.txtNIC.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNIC.Name = "txtNIC";
-            this.txtNIC.Size = new System.Drawing.Size(258, 27);
-            this.txtNIC.TabIndex = 2;
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(186, 104);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(258, 27);
-            this.txtPhone.TabIndex = 2;
-            // 
-            // txtVehicleName
-            // 
-            this.txtVehicleName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVehicleName.Location = new System.Drawing.Point(186, 150);
-            this.txtVehicleName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtVehicleName.Name = "txtVehicleName";
-            this.txtVehicleName.Size = new System.Drawing.Size(258, 27);
-            this.txtVehicleName.TabIndex = 2;
-            // 
-            // txtEngineNo
-            // 
-            this.txtEngineNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEngineNo.Location = new System.Drawing.Point(186, 193);
-            this.txtEngineNo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtEngineNo.Name = "txtEngineNo";
-            this.txtEngineNo.Size = new System.Drawing.Size(258, 27);
-            this.txtEngineNo.TabIndex = 2;
-            // 
-            // txtChasisNo
-            // 
-            this.txtChasisNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChasisNo.Location = new System.Drawing.Point(186, 238);
-            this.txtChasisNo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtChasisNo.Name = "txtChasisNo";
-            this.txtChasisNo.Size = new System.Drawing.Size(258, 27);
-            this.txtChasisNo.TabIndex = 2;
-            // 
-            // txtNoPlate
-            // 
-            this.txtNoPlate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoPlate.Location = new System.Drawing.Point(186, 283);
-            this.txtNoPlate.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNoPlate.Name = "txtNoPlate";
-            this.txtNoPlate.Size = new System.Drawing.Size(258, 27);
-            this.txtNoPlate.TabIndex = 2;
-            // 
-            // txtRegFees
-            // 
-            this.txtRegFees.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegFees.Location = new System.Drawing.Point(186, 331);
-            this.txtRegFees.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRegFees.Name = "txtRegFees";
-            this.txtRegFees.Size = new System.Drawing.Size(258, 27);
-            this.txtRegFees.TabIndex = 2;
-            // 
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Dock = System.Windows.Forms.DockStyle.Top;
             this.label10.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(0, 20);
+            this.label10.Location = new System.Drawing.Point(0, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(951, 40);
+            this.label10.Size = new System.Drawing.Size(958, 75);
             this.label10.TabIndex = 3;
             this.label10.Text = "Add Owners Details ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Poppins", 11.25F);
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(0, 541);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(159, 36);
-            this.btnBack.TabIndex = 16;
-            this.btnBack.Text = "< Back";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // Exit
-            // 
-            this.Exit.BackColor = System.Drawing.Color.Transparent;
-            this.Exit.Image = global::Karachi_Showroom_System.Properties.Resources.cross_235;
-            this.Exit.Location = new System.Drawing.Point(900, 0);
-            this.Exit.Margin = new System.Windows.Forms.Padding(2);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(50, 40);
-            this.Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Exit.TabIndex = 15;
-            this.Exit.TabStop = false;
-            this.Exit.Click += new System.EventHandler(this.Exit_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel1.Controls.Add(this.BtnAdd);
+            this.panel1.Controls.Add(this.BtnAddGuna);
+            this.panel1.Controls.Add(this.txtOwnerName);
+            this.panel1.Controls.Add(this.txtNIC);
+            this.panel1.Controls.Add(this.txtPhone);
+            this.panel1.Controls.Add(this.txtEngineNo);
+            this.panel1.Controls.Add(this.txtChasisNo);
+            this.panel1.Controls.Add(this.txtNoPlate);
+            this.panel1.Controls.Add(this.txtRegFees);
+            this.panel1.Controls.Add(this.cmbVehicleName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtRegFees);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txtNoPlate);
-            this.panel1.Controls.Add(this.txtOwnerName);
-            this.panel1.Controls.Add(this.txtChasisNo);
-            this.panel1.Controls.Add(this.txtNIC);
-            this.panel1.Controls.Add(this.txtEngineNo);
-            this.panel1.Controls.Add(this.txtPhone);
-            this.panel1.Controls.Add(this.txtVehicleName);
-            this.panel1.Location = new System.Drawing.Point(228, 78);
+            this.panel1.Location = new System.Drawing.Point(228, 89);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(486, 444);
+            this.panel1.Size = new System.Drawing.Size(486, 499);
             this.panel1.TabIndex = 17;
+            // 
+            // BtnAddGuna
+            // 
+            this.BtnAddGuna.BorderRadius = 8;
+            this.BtnAddGuna.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnAddGuna.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnAddGuna.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnAddGuna.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnAddGuna.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.BtnAddGuna.ForeColor = System.Drawing.Color.White;
+            this.BtnAddGuna.Location = new System.Drawing.Point(149, 392);
+            this.BtnAddGuna.Name = "BtnAddGuna";
+            this.BtnAddGuna.Size = new System.Drawing.Size(211, 45);
+            this.BtnAddGuna.TabIndex = 19;
+            this.BtnAddGuna.Text = "Add Owner";
+            this.BtnAddGuna.Click += new System.EventHandler(this.BtnAddGuna_Click);
+            // 
+            // txtOwnerName
+            // 
+            this.txtOwnerName.BorderRadius = 5;
+            this.txtOwnerName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOwnerName.DefaultText = "";
+            this.txtOwnerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtOwnerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtOwnerName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOwnerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOwnerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOwnerName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOwnerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOwnerName.Location = new System.Drawing.Point(184, 28);
+            this.txtOwnerName.Name = "txtOwnerName";
+            this.txtOwnerName.PlaceholderText = "";
+            this.txtOwnerName.SelectedText = "";
+            this.txtOwnerName.Size = new System.Drawing.Size(264, 36);
+            this.txtOwnerName.TabIndex = 18;
+            // 
+            // txtNIC
+            // 
+            this.txtNIC.BorderRadius = 5;
+            this.txtNIC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNIC.DefaultText = "";
+            this.txtNIC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNIC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNIC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNIC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNIC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNIC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNIC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNIC.Location = new System.Drawing.Point(184, 71);
+            this.txtNIC.Name = "txtNIC";
+            this.txtNIC.PlaceholderText = "";
+            this.txtNIC.SelectedText = "";
+            this.txtNIC.Size = new System.Drawing.Size(264, 36);
+            this.txtNIC.TabIndex = 18;
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.BorderRadius = 5;
+            this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhone.DefaultText = "";
+            this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhone.Location = new System.Drawing.Point(184, 114);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.PlaceholderText = "";
+            this.txtPhone.SelectedText = "";
+            this.txtPhone.Size = new System.Drawing.Size(264, 36);
+            this.txtPhone.TabIndex = 18;
+            // 
+            // txtEngineNo
+            // 
+            this.txtEngineNo.BorderRadius = 5;
+            this.txtEngineNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEngineNo.DefaultText = "";
+            this.txtEngineNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEngineNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEngineNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEngineNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEngineNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEngineNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEngineNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEngineNo.Location = new System.Drawing.Point(184, 199);
+            this.txtEngineNo.Name = "txtEngineNo";
+            this.txtEngineNo.PlaceholderText = "";
+            this.txtEngineNo.SelectedText = "";
+            this.txtEngineNo.Size = new System.Drawing.Size(264, 36);
+            this.txtEngineNo.TabIndex = 18;
+            // 
+            // txtChasisNo
+            // 
+            this.txtChasisNo.BorderRadius = 5;
+            this.txtChasisNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtChasisNo.DefaultText = "";
+            this.txtChasisNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtChasisNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtChasisNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtChasisNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtChasisNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtChasisNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChasisNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtChasisNo.Location = new System.Drawing.Point(184, 241);
+            this.txtChasisNo.Name = "txtChasisNo";
+            this.txtChasisNo.PlaceholderText = "";
+            this.txtChasisNo.SelectedText = "";
+            this.txtChasisNo.Size = new System.Drawing.Size(264, 36);
+            this.txtChasisNo.TabIndex = 18;
+            // 
+            // txtNoPlate
+            // 
+            this.txtNoPlate.BorderRadius = 5;
+            this.txtNoPlate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNoPlate.DefaultText = "";
+            this.txtNoPlate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNoPlate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNoPlate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNoPlate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNoPlate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNoPlate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoPlate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNoPlate.Location = new System.Drawing.Point(184, 285);
+            this.txtNoPlate.Name = "txtNoPlate";
+            this.txtNoPlate.PlaceholderText = "";
+            this.txtNoPlate.SelectedText = "";
+            this.txtNoPlate.Size = new System.Drawing.Size(264, 36);
+            this.txtNoPlate.TabIndex = 18;
+            // 
+            // txtRegFees
+            // 
+            this.txtRegFees.BorderRadius = 5;
+            this.txtRegFees.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRegFees.DefaultText = "";
+            this.txtRegFees.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRegFees.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRegFees.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRegFees.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRegFees.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRegFees.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegFees.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRegFees.Location = new System.Drawing.Point(184, 333);
+            this.txtRegFees.Name = "txtRegFees";
+            this.txtRegFees.PlaceholderText = "";
+            this.txtRegFees.SelectedText = "";
+            this.txtRegFees.Size = new System.Drawing.Size(264, 36);
+            this.txtRegFees.TabIndex = 18;
+            // 
+            // cmbVehicleName
+            // 
+            this.cmbVehicleName.BackColor = System.Drawing.Color.Transparent;
+            this.cmbVehicleName.BorderRadius = 5;
+            this.cmbVehicleName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbVehicleName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbVehicleName.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbVehicleName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbVehicleName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbVehicleName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbVehicleName.ItemHeight = 30;
+            this.cmbVehicleName.Location = new System.Drawing.Point(184, 157);
+            this.cmbVehicleName.Name = "cmbVehicleName";
+            this.cmbVehicleName.Size = new System.Drawing.Size(264, 36);
+            this.cmbVehicleName.TabIndex = 3;
+            this.cmbVehicleName.SelectedIndexChanged += new System.EventHandler(this.cmbVehicleName_SelectedIndexChanged);
+            // 
+            // btnBack
+            // 
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.Transparent;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Image = global::Karachi_Showroom_System.Properties.Resources.back;
+            this.btnBack.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnBack.Location = new System.Drawing.Point(2, 2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 20;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
+            // 
+            // BtnExit
+            // 
+            this.BtnExit.FillColor = System.Drawing.Color.Transparent;
+            this.BtnExit.Image = global::Karachi_Showroom_System.Properties.Resources.Exit;
+            this.BtnExit.ImageRotate = 0F;
+            this.BtnExit.Location = new System.Drawing.Point(912, 0);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.BtnExit.Size = new System.Drawing.Size(46, 46);
+            this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnExit.TabIndex = 21;
+            this.BtnExit.TabStop = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // AddOwner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(951, 577);
+            this.ClientSize = new System.Drawing.Size(958, 622);
+            this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.Exit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -328,9 +410,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Check";
             this.Load += new System.EventHandler(this.AddOwner_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -345,18 +427,18 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button BtnAdd;
-        private System.Windows.Forms.TextBox txtOwnerName;
-        private System.Windows.Forms.TextBox txtNIC;
-        private System.Windows.Forms.TextBox txtPhone;
-        private System.Windows.Forms.TextBox txtVehicleName;
-        private System.Windows.Forms.TextBox txtEngineNo;
-        private System.Windows.Forms.TextBox txtChasisNo;
-        private System.Windows.Forms.TextBox txtNoPlate;
-        private System.Windows.Forms.TextBox txtRegFees;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.PictureBox Exit;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbVehicleName;
+        private Guna.UI2.WinForms.Guna2TextBox txtOwnerName;
+        private Guna.UI2.WinForms.Guna2TextBox txtNIC;
+        private Guna.UI2.WinForms.Guna2TextBox txtPhone;
+        private Guna.UI2.WinForms.Guna2TextBox txtEngineNo;
+        private Guna.UI2.WinForms.Guna2TextBox txtChasisNo;
+        private Guna.UI2.WinForms.Guna2TextBox txtNoPlate;
+        private Guna.UI2.WinForms.Guna2TextBox txtRegFees;
+        private Guna.UI2.WinForms.Guna2CircleButton btnBack;
+        private Guna.UI2.WinForms.Guna2Button BtnAddGuna;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox BtnExit;
     }
 }

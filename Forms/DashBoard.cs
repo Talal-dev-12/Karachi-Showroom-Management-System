@@ -131,6 +131,9 @@ namespace Karachi_Showroom_System.Forms
         private void button4_Click(object sender, EventArgs e)
         {
             AlignNavLine((Button)sender);
+            AddCar addCar = new AddCar();
+            addCar.Show();
+            this.Hide();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -173,6 +176,22 @@ namespace Karachi_Showroom_System.Forms
 
         private void displayGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            guna2DateTimePicker1.Value = DateTime.Today;
 
         }
     }

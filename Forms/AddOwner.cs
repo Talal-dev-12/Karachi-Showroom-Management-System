@@ -8,41 +8,110 @@ namespace Karachi_Showroom_System.Forms
     public partial class AddOwner : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect,
+                                                        int nBottomRect, int nWidthEllipse, int nHeightEllipse);
 
-        private static extern IntPtr CreateRoundRectRgn
-        (
-        int nLeftRect,
-        int nTopRect,
-        int nRightRect,
-        int nBottomRect,
-        int nWidthEllipse,
-        int nHeightEllipse
-        );
+        string Connection_String = "server=localhost;user=root;database=Karachi_motor_showroom;port=3307;password=1234;";
+
         public AddOwner()
         {
             InitializeComponent();
+
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
-            string Connection_String = "server=localhost;user=root;database=Karachi_motor_showroom;port=3307;password=1234;";
 
+        private void AddOwner_Load(object sender, EventArgs e)
+        {
+            LoadVehicleNames();
+        }
+        private void LoadVehicleNames()
+        {
+            using (MySqlConnection con = new MySqlConnection(Connection_String))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "SELECT VehicleName FROM VehicleRates ORDER BY VehicleName ASC";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    cmbVehicleName.Items.Clear();
+                    cmbVehicleName.Items.Add("Select Vehicle ▼"); // 👈 Placeholder item
+
+                    while (reader.Read())
+                    {
+                        cmbVehicleName.Items.Add(reader["VehicleName"].ToString());
+                    }
+
+                    cmbVehicleName.SelectedIndex = 0; // 👈 Set default item
+
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Failed to load vehicle list: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
         private void BtnAdd_Click(object sender, EventArgs e)
         {
+           
+        }
+        private void Exit_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+
+            DashBoard dashBoard = new DashBoard();
+            dashBoard.Show();
+            this.Close();
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void cmbVehicleName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAddGuna_Click(object sender, EventArgs e)
+        {
+            if (cmbVehicleName.SelectedIndex == 0)
+            {
+                MessageBox.Show("Please select a valid vehicle.");
+                return;
+            }
 
             using (MySqlConnection con = new MySqlConnection(Connection_String))
             {
                 try
                 {
                     string query = @"INSERT INTO OwnerDetails 
-        (OwnerName, OwnerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, NoPlat, RegFees)
-        VALUES 
-        (@OwnerName, @OwnerNIC, @PhoneNo, @VehicleName, @EngineNo, @ChasisNo, @NoPlat, @RegFees)";
+                (OwnerName, OwnerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, NoPlat, RegFees)
+                VALUES 
+                (@OwnerName, @OwnerNIC, @PhoneNo, @VehicleName, @EngineNo, @ChasisNo, @NoPlat, @RegFees)";
 
                     MySqlCommand cmd = new MySqlCommand(query, con);
 
                     cmd.Parameters.AddWithValue("@OwnerName", txtOwnerName.Text);
                     cmd.Parameters.AddWithValue("@OwnerNIC", txtNIC.Text);
                     cmd.Parameters.AddWithValue("@PhoneNo", txtPhone.Text);
-                    cmd.Parameters.AddWithValue("@VehicleName", txtVehicleName.Text);
+                    cmd.Parameters.AddWithValue("@VehicleName", cmbVehicleName.Text); // 👈 Selected vehicle
                     cmd.Parameters.AddWithValue("@EngineNo", txtEngineNo.Text);
                     cmd.Parameters.AddWithValue("@ChasisNo", txtChasisNo.Text);
                     cmd.Parameters.AddWithValue("@NoPlat", txtNoPlate.Text);
@@ -58,7 +127,7 @@ namespace Karachi_Showroom_System.Forms
                         txtOwnerName.Clear();
                         txtNIC.Clear();
                         txtPhone.Clear();
-                        txtVehicleName.Clear();
+                        cmbVehicleName.SelectedIndex = 0;
                         txtEngineNo.Clear();
                         txtChasisNo.Clear();
                         txtNoPlate.Clear();
@@ -74,23 +143,6 @@ namespace Karachi_Showroom_System.Forms
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
-        }
-
-        private void AddOwner_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            DashBoard dashBoard = new DashBoard();
-            dashBoard.Show();
-            this.Close();
         }
     }
 }

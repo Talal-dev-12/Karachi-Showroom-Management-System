@@ -47,13 +47,13 @@
             this.txtNoPlat = new System.Windows.Forms.TextBox();
             this.txtAID = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.Exit = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SearchBtn = new System.Windows.Forms.Button();
             this.updateBtn = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
+            this.btnBack = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.BtnExit = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -257,19 +257,6 @@
             this.label10.Text = "Edit Owners Details ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Exit
-            // 
-            this.Exit.BackColor = System.Drawing.Color.Transparent;
-            this.Exit.Image = global::Karachi_Showroom_System.Properties.Resources.cross_235;
-            this.Exit.Location = new System.Drawing.Point(890, 7);
-            this.Exit.Margin = new System.Windows.Forms.Padding(2);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(50, 40);
-            this.Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Exit.TabIndex = 13;
-            this.Exit.TabStop = false;
-            this.Exit.Click += new System.EventHandler(this.Exit_Click_1);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
@@ -332,19 +319,35 @@
             // 
             // btnBack
             // 
-            this.btnBack.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Poppins", 11.25F);
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.Transparent;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(0, 541);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Image = global::Karachi_Showroom_System.Properties.Resources.back;
+            this.btnBack.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnBack.Location = new System.Drawing.Point(4, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(159, 36);
-            this.btnBack.TabIndex = 14;
-            this.btnBack.Text = "< Back";
-            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 21;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // BtnExit
+            // 
+            this.BtnExit.FillColor = System.Drawing.Color.Transparent;
+            this.BtnExit.Image = global::Karachi_Showroom_System.Properties.Resources.Exit;
+            this.BtnExit.ImageRotate = 0F;
+            this.BtnExit.Location = new System.Drawing.Point(905, 2);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.BtnExit.Size = new System.Drawing.Size(46, 46);
+            this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnExit.TabIndex = 22;
+            this.BtnExit.TabStop = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // EditOwnerForm
             // 
@@ -352,8 +355,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
+            this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.Exit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -362,9 +365,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditOwnerForm";
             this.Load += new System.EventHandler(this.EditOwnerForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -390,10 +393,10 @@
         private System.Windows.Forms.TextBox txtNoPlat;
         private System.Windows.Forms.TextBox txtAID;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox Exit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.Button SearchBtn;
-        private System.Windows.Forms.Button btnBack;
+        private Guna.UI2.WinForms.Guna2CircleButton btnBack;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox BtnExit;
     }
 }

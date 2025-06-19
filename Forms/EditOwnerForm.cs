@@ -120,15 +120,19 @@ namespace Karachi_Showroom_System.Forms
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            // Go back to Login Page or any other previous form
             DashBoard dashBoard = new DashBoard();
             dashBoard.Show();
             this.Close();
         }
 
-        private void Exit_Click_1(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

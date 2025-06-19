@@ -15,12 +15,6 @@ namespace Karachi_Showroom_System.Forms
             txtUsername.KeyDown += txtUsername_KeyDown;
             txtPassword.KeyDown += txtPassword_KeyDown;
         }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-
-        }
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text.Trim();
@@ -70,6 +64,16 @@ namespace Karachi_Showroom_System.Forms
         private void LoginPage_Load(object sender, EventArgs e)
         {
             this.ActiveControl = txtUsername;
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

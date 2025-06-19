@@ -34,40 +34,7 @@ namespace Karachi_Showroom_System.Forms
         string connString = "server=localhost;user=root;database=Karachi_motor_showroom;port=3307;password=1234;";
         private void SearchBtn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtAID.Text))
-            {
-                MessageBox.Show("Please enter an Owner ID", "Input Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            using (MySqlConnection con = new MySqlConnection(connString))
-            {
-                try
-                {
-                    con.Open();
-                    string query = "SELECT * FROM OwnerDetails WHERE AID = @aid";
-                    MySqlCommand cmd = new MySqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@aid", txtAID.Text);
-
-                    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-
-                    if (dt.Rows.Count > 0)
-                    {
-                        dgvOwner.DataSource = dt;
-                    }
-                    else
-                    {
-                        dgvOwner.DataSource = null;
-                        MessageBox.Show("Owner not found.", "No Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-            }
+            
         }
 
         private void dgvOwner_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -121,21 +88,87 @@ namespace Karachi_Showroom_System.Forms
 
         }
 
-        private void Exit_Click(object sender, EventArgs e)
+        private void DeleteOwner_Load(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
+
             DashBoard dashBoard = new DashBoard();
             dashBoard.Show();
             this.Close();
         }
 
-        private void DeleteOwner_Load(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+        private void LoadOwnerDetails()
         {
 
+            try
+            {
+                using (MySqlConnection con = new MySqlConnection(connString))
+                {
+                    con.Open();
+                    string query = "SELECT AID, OwnerName, OwnerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, NoPlat, RegFees, CreatedAt FROM OwnerDetails  WHERE AID = @aid";
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
+                    {
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        dgvOwner.DataSource = dt;
+                    }
+                    con.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading data:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtAID.Text))
+            {
+                MessageBox.Show("Please enter an Owner ID", "Input Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            using (MySqlConnection con = new MySqlConnection(connString))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "SELECT * FROM OwnerDetails WHERE AID = @aid";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@aid", txtAID.Text);
+
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        LoadOwnerDetails();
+                    }
+                    else
+                    {
+                        dgvOwner.DataSource = null;
+                        MessageBox.Show("Owner not found.", "No Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
     }
 }
