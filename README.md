@@ -59,6 +59,29 @@ VALUES
 ('Corolla 2009-2013', 3000, 17500, 65000),
 ('Alto VXR', 1400, 7700, 30000),
 ('Suzuki Cultus 9-12', 1400, 9000, 36000);
+-- Insert fake data 
+INSERT INTO OwnerDetails (OwnerName, OwnerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, NoPlat, RegFees)
+VALUES
+('John Smith', '1234567890123', '5550101234', 'Toyota Corolla 2003-2007', 'ENG00123456', 'CHS00123456', 'ABC123', 2000),
+('Emily Johnson', '2345678901234', '5550102345', 'Toyota Probox', 'ENG00234567', 'CHS00234567', 'DEF456', 1800),
+('Michael Williams', '3456789012345', '5550103456', 'Toyota Corolla 2014', 'ENG00345678', 'CHS00345678', 'GHI789', 4000),
+('Sarah Brown', '4567890123456', '5550104567', 'Honda Reborn 10-12', 'ENG00456789', 'CHS00456789', 'JKL012', 3500),
+('David Jones', '5678901234567', '5550105678', 'Honda Civic 12-14', 'ENG00567890', 'CHS00567890', 'MNO345', 4000),
+('Jennifer Garcia', '6789012345678', '5550106789', 'Toyota Corolla 2009-2013', 'ENG00678901', 'CHS00678901', 'PQR678', 3000),
+('Robert Miller', '7890123456789', '5550107890', 'Suzuki Alto VXR', 'ENG00789012', 'CHS00789012', 'STU901', 1400),
+('Jessica Davis', '8901234567890', '5550108901', 'Suzuki Cultus 9-12', 'ENG00890123', 'CHS00890123', 'VWX234', 1400),
+('Thomas Rodriguez', '9012345678901', '5550109012', 'Toyota Corolla 2003-2007', 'ENG00901234', 'CHS00901234', 'YZA567', 2000),
+('Elizabeth Martinez', '0123456789012', '5550110123', 'Toyota Probox', 'ENG01012346', 'CHS01012346', 'BCD890', 1800),
+('Daniel Wilson', '1122334455667', '5550111234', 'Toyota Corolla 2014', 'ENG10123456', 'CHS10123456', 'CDE123', 4000),
+('Amanda Anderson', '2233445566778', '5550112345', 'Honda Reborn 10-12', 'ENG20234567', 'CHS20234567', 'EFG456', 3500),
+('Christopher Taylor', '3344556677889', '5550113456', 'Honda Civic 12-14', 'ENG30345678', 'CHS30345678', 'HIJ789', 4000),
+('Ashley Thomas', '4455667788990', '5550114567', 'Toyota Corolla 2009-2013', 'ENG40456789', 'CHS40456789', 'KLM012', 3000),
+('Matthew Hernandez', '5566778899001', '5550115678', 'Suzuki Alto VXR', 'ENG50567890', 'CHS50567890', 'NOP345', 1400),
+('Nicole Moore', '6677889900112', '5550116789', 'Suzuki Cultus 9-12', 'ENG60678901', 'CHS60678901', 'QRS678', 1400),
+('Andrew Martin', '7788990011223', '5550117890', 'Toyota Corolla 2003-2007', 'ENG70789012', 'CHS70789012', 'TUV901', 2000),
+('Samantha Jackson', '8899001122334', '5550118901', 'Toyota Probox', 'ENG80890123', 'CHS80890123', 'UVW234', 1800),
+('Joshua Thompson', '9900112233445', '5550119012', 'Toyota Corolla 2014', 'ENG90901234', 'CHS90901234', 'WXY567', 4000),
+('Megan White', '0011223344556', '5550120123', 'Honda Reborn 10-12', 'ENG01012347', 'CHS01012347', 'XYZ890', 3500); 
 3. Update the Connection String
 In your code, locate and update the following:
 
