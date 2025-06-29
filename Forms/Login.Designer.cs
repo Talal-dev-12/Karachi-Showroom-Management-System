@@ -52,10 +52,10 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblName.Location = new System.Drawing.Point(123, 343);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(62, 178);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(244, 67);
+            this.lblName.Size = new System.Drawing.Size(123, 34);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Username :";
             // 
@@ -65,10 +65,10 @@
             this.lblPass.BackColor = System.Drawing.Color.Transparent;
             this.lblPass.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblPass.Location = new System.Drawing.Point(137, 465);
-            this.lblPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPass.Location = new System.Drawing.Point(68, 242);
+            this.lblPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(230, 67);
+            this.lblPass.Size = new System.Drawing.Size(116, 34);
             this.lblPass.TabIndex = 1;
             this.lblPass.Text = "Password :";
             // 
@@ -79,9 +79,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1465, 141);
+            this.label1.Size = new System.Drawing.Size(732, 73);
             this.label1.TabIndex = 3;
             this.label1.Text = "Karachi Showroom Management System";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,10 +95,9 @@
             this.panel1.Controls.Add(this.lblPass);
             this.panel1.Controls.Add(this.lblName);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Location = new System.Drawing.Point(203, 160);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6);
+            this.panel1.Location = new System.Drawing.Point(102, 83);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(981, 705);
+            this.panel1.Size = new System.Drawing.Size(490, 367);
             this.panel1.TabIndex = 6;
             // 
             // txtPassword
@@ -113,13 +112,13 @@
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(387, 461);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.txtPassword.Location = new System.Drawing.Point(194, 240);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderText = "";
             this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(400, 69);
+            this.txtPassword.Size = new System.Drawing.Size(200, 36);
             this.txtPassword.TabIndex = 7;
             // 
             // txtUsername
@@ -134,12 +133,12 @@
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(387, 340);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.txtUsername.Location = new System.Drawing.Point(194, 177);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "";
             this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(400, 69);
+            this.txtUsername.Size = new System.Drawing.Size(200, 36);
             this.txtUsername.TabIndex = 7;
             // 
             // BtnLogin
@@ -157,11 +156,10 @@
             this.BtnLogin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.BtnLogin.ImageOffset = new System.Drawing.Point(25, 0);
             this.BtnLogin.ImageSize = new System.Drawing.Size(32, 32);
-            this.BtnLogin.Location = new System.Drawing.Point(307, 582);
-            this.BtnLogin.Margin = new System.Windows.Forms.Padding(6);
+            this.BtnLogin.Location = new System.Drawing.Point(154, 303);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Padding = new System.Windows.Forms.Padding(0, 0, 30, 8);
-            this.BtnLogin.Size = new System.Drawing.Size(360, 85);
+            this.BtnLogin.Padding = new System.Windows.Forms.Padding(0, 0, 15, 4);
+            this.BtnLogin.Size = new System.Drawing.Size(180, 44);
             this.BtnLogin.TabIndex = 8;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
@@ -170,10 +168,10 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(274, -96);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(137, -50);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(500, 500);
+            this.pictureBox2.Size = new System.Drawing.Size(250, 260);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -189,11 +187,10 @@
             this.BtnExit.FillColor = System.Drawing.Color.Transparent;
             this.BtnExit.Image = global::Karachi_Showroom_System.Properties.Resources.Exit;
             this.BtnExit.ImageRotate = 0F;
-            this.BtnExit.Location = new System.Drawing.Point(1373, 0);
-            this.BtnExit.Margin = new System.Windows.Forms.Padding(6);
+            this.BtnExit.Location = new System.Drawing.Point(686, 0);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.BtnExit.Size = new System.Drawing.Size(92, 88);
+            this.BtnExit.Size = new System.Drawing.Size(46, 46);
             this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnExit.TabIndex = 7;
             this.BtnExit.TabStop = false;
@@ -205,27 +202,27 @@
             this.label9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.LightGray;
-            this.label9.Location = new System.Drawing.Point(0, 888);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(0, 462);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Padding = new System.Windows.Forms.Padding(0, 0, 5, 5);
-            this.label9.Size = new System.Drawing.Size(1465, 91);
+            this.label9.Padding = new System.Windows.Forms.Padding(0, 0, 2, 3);
+            this.label9.Size = new System.Drawing.Size(732, 47);
             this.label9.TabIndex = 23;
-            this.label9.Text = "Made by : S.M Talal Nadeem";
+            this.label9.Text = "DBMS LAB PROJECT";
             this.label9.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // LoginPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1465, 979);
+            this.ClientSize = new System.Drawing.Size(732, 509);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Karachi Showroom Management System";

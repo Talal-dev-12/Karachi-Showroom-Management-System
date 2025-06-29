@@ -81,7 +81,10 @@ namespace Karachi_Showroom_System.Forms
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     con.Open();
-                    string query = "SELECT CID, CustomerName, CustomerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, LicensePlate, RentFees, CreatedAt FROM CustomerDetails ORDER BY CID DESC";
+                    string query = "SELECT CID, CustomerName, CustomerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, LicensePlate, RentFees, CreatedAt " +
+                        "FROM CustomerDetails " +
+                        "WHERE IsArchive = 0" +
+                        "ORDER BY CID DESC;";
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
                         DataTable dt = new DataTable();

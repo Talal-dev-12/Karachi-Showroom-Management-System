@@ -134,7 +134,8 @@ namespace Karachi_Showroom_System.Forms
                 try
                 {
                     con.Open();
-                    string query = "SELECT * FROM CustomerDetails WHERE CID = @aid";
+                    string query = "SELECT * FROM CustomerDetails WHERE IsArchive = 0 AND CID = @aid";
+
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@aid", txtAID.Text);
 
@@ -179,7 +180,7 @@ namespace Karachi_Showroom_System.Forms
                     try
                     {
                         con.Open();
-                        string query = "DELETE FROM CustomerName WHERE CID = @aid";
+                        string query = "UPDATE CustomerDetails SET IsArchive = 1 WHERE CID = @aid;";
                         MySqlCommand cmd = new MySqlCommand(query, con);
                         cmd.Parameters.AddWithValue("@aid", txtAID.Text);
 
