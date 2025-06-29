@@ -37,22 +37,22 @@ namespace Karachi_Showroom_System.Forms
             using (MySqlConnection con = new MySqlConnection(connString))
             {
                 con.Open();
-                string query = "SELECT * FROM OwnerDetails WHERE AID = @aid";
+                string query = "SELECT * FROM CustomerDetails WHERE CID = @Cid";
                 MySqlCommand cmd = new MySqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@aid", txtAID.Text);
+                cmd.Parameters.AddWithValue("@Cid", txtAID.Text);
 
                 using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
                     {
-                        txtOwnerName.Text = reader["OwnerName"].ToString();
-                        txtNIC.Text = reader["OwnerNIC"].ToString();
+                        txtOwnerName.Text = reader["CustomerName"].ToString();
+                        txtNIC.Text = reader["CustomerNIC"].ToString();
                         txtPhone.Text = reader["PhoneNo"].ToString();
                         txtVehicle.Text = reader["VehicleName"].ToString();
                         txtEngine.Text = reader["EngineNo"].ToString();
                         txtChasis.Text = reader["ChasisNo"].ToString();
-                        txtNoPlat.Text = reader["NoPlat"].ToString();
-                        txtFees.Text = reader["RegFees"].ToString();
+                        txtNoPlat.Text = reader["LicensePlate"].ToString();
+                        txtrent.Text = reader["RentFees"].ToString();
                     }
                     else
                     {
@@ -68,15 +68,15 @@ namespace Karachi_Showroom_System.Forms
             using (MySqlConnection con = new MySqlConnection(connString))
             {
                 con.Open();
-                string updateQuery = @"UPDATE OwnerDetails SET 
-                    OwnerName = @name,
-                    OwnerNIC = @nic,
+                string updateQuery = @"UPDATE CustomerDetails SET 
+                    CustomerName = @name,
+                    CustomerNIC = @nic,
                     PhoneNo = @phone,
                     VehicleName = @vehicle,
                     EngineNo = @engine,
-                    ChasisNo = @chasis,
-                    NoPlat = @plate,
-                    RegFees = @fees
+                    ChasisNo = @Number,
+                    LicensePlate = @plate,
+                    RentFees = @fees
                     WHERE AID = @aid";
 
                 MySqlCommand cmd = new MySqlCommand(updateQuery, con);
@@ -85,9 +85,9 @@ namespace Karachi_Showroom_System.Forms
                 cmd.Parameters.AddWithValue("@phone", txtPhone.Text);
                 cmd.Parameters.AddWithValue("@vehicle", txtVehicle.Text);
                 cmd.Parameters.AddWithValue("@engine", txtEngine.Text);
-                cmd.Parameters.AddWithValue("@chasis", txtChasis.Text);
+                cmd.Parameters.AddWithValue("@Number", txtChasis.Text);
                 cmd.Parameters.AddWithValue("@plate", txtNoPlat.Text);
-                cmd.Parameters.AddWithValue("@fees", txtFees.Text);
+                cmd.Parameters.AddWithValue("@fees", txtrent.Text);
                 cmd.Parameters.AddWithValue("@aid", txtAID.Text);
 
                 int rows = cmd.ExecuteNonQuery();
@@ -95,7 +95,7 @@ namespace Karachi_Showroom_System.Forms
 
                 if (rows > 0)
                 {
-                    MessageBox.Show("Owner updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Customer updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {

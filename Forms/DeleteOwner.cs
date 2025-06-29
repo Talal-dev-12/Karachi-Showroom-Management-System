@@ -105,7 +105,7 @@ namespace Karachi_Showroom_System.Forms
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     con.Open();
-                    string query = "SELECT AID, OwnerName, OwnerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, NoPlat, RegFees, CreatedAt FROM OwnerDetails WHERE AID = @aid";
+                    string query = "SELECT CID, CustomerName, CustomerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, LicensePlate, RentFees, CreatedAt FROM CustomerDetails WHERE CID = @aid";
 
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@aid", aid);
@@ -125,7 +125,7 @@ namespace Karachi_Showroom_System.Forms
         {
             if (string.IsNullOrWhiteSpace(txtAID.Text))
             {
-                MessageBox.Show("Please enter an Owner ID", "Input Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter an Customer ID", "Input Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -134,7 +134,7 @@ namespace Karachi_Showroom_System.Forms
                 try
                 {
                     con.Open();
-                    string query = "SELECT * FROM OwnerDetails WHERE AID = @aid";
+                    string query = "SELECT * FROM CustomerDetails WHERE CID = @aid";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@aid", txtAID.Text);
 
@@ -150,7 +150,7 @@ namespace Karachi_Showroom_System.Forms
                     else
                     {
                         dgvOwner.DataSource = null;
-                        MessageBox.Show("Owner not found.", "No Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Customer not found.", "No Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
@@ -165,7 +165,7 @@ namespace Karachi_Showroom_System.Forms
 
             if (string.IsNullOrWhiteSpace(txtAID.Text))
             {
-                MessageBox.Show("Please enter Owner ID to delete.", "Input Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter Customer ID to delete.", "Input Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -179,7 +179,7 @@ namespace Karachi_Showroom_System.Forms
                     try
                     {
                         con.Open();
-                        string query = "DELETE FROM OwnerDetails WHERE AID = @aid";
+                        string query = "DELETE FROM CustomerName WHERE CID = @aid";
                         MySqlCommand cmd = new MySqlCommand(query, con);
                         cmd.Parameters.AddWithValue("@aid", txtAID.Text);
 
@@ -193,7 +193,7 @@ namespace Karachi_Showroom_System.Forms
                         }
                         else
                         {
-                            MessageBox.Show("Owner not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Customer Not Found not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     catch (Exception ex)

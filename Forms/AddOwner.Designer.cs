@@ -36,9 +36,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnAddGuna = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.txtOwnerName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNIC = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
@@ -49,6 +48,8 @@
             this.cmbVehicleName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnBack = new Guna.UI2.WinForms.Guna2CircleButton();
             this.BtnExit = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).BeginInit();
             this.SuspendLayout();
@@ -59,10 +60,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(124, 79);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(248, 152);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 28);
+            this.label1.Size = new System.Drawing.Size(95, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "NIC :";
             // 
@@ -72,10 +73,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(102, 122);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(204, 235);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 28);
+            this.label2.Size = new System.Drawing.Size(139, 56);
             this.label2.TabIndex = 0;
             this.label2.Text = "Phone :";
             // 
@@ -85,10 +86,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(40, 165);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(80, 317);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 28);
+            this.label3.Size = new System.Drawing.Size(263, 56);
             this.label3.TabIndex = 0;
             this.label3.Text = "Vehicle Name :";
             // 
@@ -98,10 +99,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(73, 207);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(146, 398);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 28);
+            this.label4.Size = new System.Drawing.Size(197, 56);
             this.label4.TabIndex = 0;
             this.label4.Text = "Engine No :";
             // 
@@ -111,10 +112,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(77, 249);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(154, 479);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 28);
+            this.label5.Size = new System.Drawing.Size(191, 56);
             this.label5.TabIndex = 0;
             this.label5.Text = "ChasisNo :";
             // 
@@ -124,10 +125,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(86, 293);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(172, 563);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 28);
+            this.label6.Size = new System.Drawing.Size(172, 56);
             this.label6.TabIndex = 0;
             this.label6.Text = "No Plate :";
             // 
@@ -137,10 +138,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(80, 341);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(160, 656);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 28);
+            this.label7.Size = new System.Drawing.Size(183, 56);
             this.label7.TabIndex = 0;
             this.label7.Text = "Reg Fees :";
             // 
@@ -150,31 +151,17 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(47, 36);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(43, 67);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 28);
+            this.label8.Size = new System.Drawing.Size(305, 56);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Owner Name :";
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label10.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(958, 75);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Add Owners Details ";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.Text = "Customer Name :";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel1.Controls.Add(this.BtnAddGuna);
+            this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.txtOwnerName);
             this.panel1.Controls.Add(this.txtNIC);
             this.panel1.Controls.Add(this.txtPhone);
@@ -191,26 +178,27 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(228, 89);
+            this.panel1.Location = new System.Drawing.Point(456, 207);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(486, 499);
+            this.panel1.Size = new System.Drawing.Size(972, 960);
             this.panel1.TabIndex = 17;
             // 
-            // BtnAddGuna
+            // guna2Button1
             // 
-            this.BtnAddGuna.BorderRadius = 8;
-            this.BtnAddGuna.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnAddGuna.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnAddGuna.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnAddGuna.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnAddGuna.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.BtnAddGuna.ForeColor = System.Drawing.Color.White;
-            this.BtnAddGuna.Location = new System.Drawing.Point(149, 392);
-            this.BtnAddGuna.Name = "BtnAddGuna";
-            this.BtnAddGuna.Size = new System.Drawing.Size(211, 45);
-            this.BtnAddGuna.TabIndex = 19;
-            this.BtnAddGuna.Text = "Add Owner";
-            this.BtnAddGuna.Click += new System.EventHandler(this.BtnAddGuna_Click);
+            this.guna2Button1.BorderRadius = 8;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(368, 766);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(314, 80);
+            this.guna2Button1.TabIndex = 19;
+            this.guna2Button1.Text = "Add";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // txtOwnerName
             // 
@@ -224,11 +212,12 @@
             this.txtOwnerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtOwnerName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOwnerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtOwnerName.Location = new System.Drawing.Point(184, 28);
+            this.txtOwnerName.Location = new System.Drawing.Point(368, 54);
+            this.txtOwnerName.Margin = new System.Windows.Forms.Padding(16, 15, 16, 15);
             this.txtOwnerName.Name = "txtOwnerName";
             this.txtOwnerName.PlaceholderText = "";
             this.txtOwnerName.SelectedText = "";
-            this.txtOwnerName.Size = new System.Drawing.Size(264, 36);
+            this.txtOwnerName.Size = new System.Drawing.Size(528, 69);
             this.txtOwnerName.TabIndex = 18;
             // 
             // txtNIC
@@ -243,11 +232,12 @@
             this.txtNIC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNIC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNIC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNIC.Location = new System.Drawing.Point(184, 71);
+            this.txtNIC.Location = new System.Drawing.Point(368, 137);
+            this.txtNIC.Margin = new System.Windows.Forms.Padding(16, 15, 16, 15);
             this.txtNIC.Name = "txtNIC";
             this.txtNIC.PlaceholderText = "";
             this.txtNIC.SelectedText = "";
-            this.txtNIC.Size = new System.Drawing.Size(264, 36);
+            this.txtNIC.Size = new System.Drawing.Size(528, 69);
             this.txtNIC.TabIndex = 18;
             // 
             // txtPhone
@@ -262,11 +252,12 @@
             this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Location = new System.Drawing.Point(184, 114);
+            this.txtPhone.Location = new System.Drawing.Point(368, 219);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(16, 15, 16, 15);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PlaceholderText = "";
             this.txtPhone.SelectedText = "";
-            this.txtPhone.Size = new System.Drawing.Size(264, 36);
+            this.txtPhone.Size = new System.Drawing.Size(528, 69);
             this.txtPhone.TabIndex = 18;
             // 
             // txtEngineNo
@@ -281,11 +272,12 @@
             this.txtEngineNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEngineNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEngineNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEngineNo.Location = new System.Drawing.Point(184, 199);
+            this.txtEngineNo.Location = new System.Drawing.Point(368, 383);
+            this.txtEngineNo.Margin = new System.Windows.Forms.Padding(16, 15, 16, 15);
             this.txtEngineNo.Name = "txtEngineNo";
             this.txtEngineNo.PlaceholderText = "";
             this.txtEngineNo.SelectedText = "";
-            this.txtEngineNo.Size = new System.Drawing.Size(264, 36);
+            this.txtEngineNo.Size = new System.Drawing.Size(528, 69);
             this.txtEngineNo.TabIndex = 18;
             // 
             // txtChasisNo
@@ -300,11 +292,12 @@
             this.txtChasisNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChasisNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtChasisNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtChasisNo.Location = new System.Drawing.Point(184, 241);
+            this.txtChasisNo.Location = new System.Drawing.Point(368, 463);
+            this.txtChasisNo.Margin = new System.Windows.Forms.Padding(16, 15, 16, 15);
             this.txtChasisNo.Name = "txtChasisNo";
             this.txtChasisNo.PlaceholderText = "";
             this.txtChasisNo.SelectedText = "";
-            this.txtChasisNo.Size = new System.Drawing.Size(264, 36);
+            this.txtChasisNo.Size = new System.Drawing.Size(528, 69);
             this.txtChasisNo.TabIndex = 18;
             // 
             // txtNoPlate
@@ -319,11 +312,12 @@
             this.txtNoPlate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNoPlate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoPlate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNoPlate.Location = new System.Drawing.Point(184, 285);
+            this.txtNoPlate.Location = new System.Drawing.Point(368, 548);
+            this.txtNoPlate.Margin = new System.Windows.Forms.Padding(16, 15, 16, 15);
             this.txtNoPlate.Name = "txtNoPlate";
             this.txtNoPlate.PlaceholderText = "";
             this.txtNoPlate.SelectedText = "";
-            this.txtNoPlate.Size = new System.Drawing.Size(264, 36);
+            this.txtNoPlate.Size = new System.Drawing.Size(528, 69);
             this.txtNoPlate.TabIndex = 18;
             // 
             // txtRegFees
@@ -338,11 +332,12 @@
             this.txtRegFees.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtRegFees.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegFees.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRegFees.Location = new System.Drawing.Point(184, 333);
+            this.txtRegFees.Location = new System.Drawing.Point(368, 640);
+            this.txtRegFees.Margin = new System.Windows.Forms.Padding(16, 15, 16, 15);
             this.txtRegFees.Name = "txtRegFees";
             this.txtRegFees.PlaceholderText = "";
             this.txtRegFees.SelectedText = "";
-            this.txtRegFees.Size = new System.Drawing.Size(264, 36);
+            this.txtRegFees.Size = new System.Drawing.Size(528, 69);
             this.txtRegFees.TabIndex = 18;
             // 
             // cmbVehicleName
@@ -356,14 +351,15 @@
             this.cmbVehicleName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbVehicleName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbVehicleName.ItemHeight = 30;
-            this.cmbVehicleName.Location = new System.Drawing.Point(184, 157);
+            this.cmbVehicleName.Location = new System.Drawing.Point(368, 302);
+            this.cmbVehicleName.Margin = new System.Windows.Forms.Padding(6);
             this.cmbVehicleName.Name = "cmbVehicleName";
-            this.cmbVehicleName.Size = new System.Drawing.Size(264, 36);
+            this.cmbVehicleName.Size = new System.Drawing.Size(524, 36);
             this.cmbVehicleName.TabIndex = 3;
-            this.cmbVehicleName.SelectedIndexChanged += new System.EventHandler(this.cmbVehicleName_SelectedIndexChanged);
             // 
             // btnBack
             // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -373,39 +369,71 @@
             this.btnBack.ForeColor = System.Drawing.Color.White;
             this.btnBack.Image = global::Karachi_Showroom_System.Properties.Resources.back;
             this.btnBack.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnBack.Location = new System.Drawing.Point(2, 2);
+            this.btnBack.Location = new System.Drawing.Point(4, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(6);
             this.btnBack.Name = "btnBack";
             this.btnBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.Size = new System.Drawing.Size(120, 115);
             this.btnBack.TabIndex = 20;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
             // BtnExit
             // 
+            this.BtnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.BtnExit.FillColor = System.Drawing.Color.Transparent;
             this.BtnExit.Image = global::Karachi_Showroom_System.Properties.Resources.Exit;
             this.BtnExit.ImageRotate = 0F;
-            this.BtnExit.Location = new System.Drawing.Point(912, 0);
+            this.BtnExit.Location = new System.Drawing.Point(1824, 0);
+            this.BtnExit.Margin = new System.Windows.Forms.Padding(6);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.BtnExit.Size = new System.Drawing.Size(46, 46);
+            this.BtnExit.Size = new System.Drawing.Size(92, 88);
             this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnExit.TabIndex = 21;
             this.BtnExit.TabStop = false;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.label9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.LightGray;
+            this.label9.Location = new System.Drawing.Point(0, 1216);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(1916, 91);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Made by : S.M Talal Nadeem";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.label11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(1916, 181);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Add Customer ";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // AddOwner
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(958, 622);
+            this.ClientSize = new System.Drawing.Size(1916, 1307);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddOwner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Check";
@@ -427,7 +455,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2ComboBox cmbVehicleName;
         private Guna.UI2.WinForms.Guna2TextBox txtOwnerName;
@@ -438,7 +465,9 @@
         private Guna.UI2.WinForms.Guna2TextBox txtNoPlate;
         private Guna.UI2.WinForms.Guna2TextBox txtRegFees;
         private Guna.UI2.WinForms.Guna2CircleButton btnBack;
-        private Guna.UI2.WinForms.Guna2Button BtnAddGuna;
         private Guna.UI2.WinForms.Guna2CirclePictureBox BtnExit;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
     }
 }

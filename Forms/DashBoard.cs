@@ -81,7 +81,7 @@ namespace Karachi_Showroom_System.Forms
                 using (MySqlConnection con = new MySqlConnection(connString))
                 {
                     con.Open();
-                    string query = "SELECT AID, OwnerName, OwnerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, NoPlat, RegFees, CreatedAt FROM OwnerDetails ORDER BY AID DESC";
+                    string query = "SELECT CID, CustomerName, CustomerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, LicensePlate, RentFees, CreatedAt FROM CustomerDetails ORDER BY CID DESC";
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, con))
                     {
                         DataTable dt = new DataTable();
@@ -125,7 +125,7 @@ namespace Karachi_Showroom_System.Forms
 
         private void DashBoard_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -143,35 +143,31 @@ namespace Karachi_Showroom_System.Forms
         }
         private void DesignCustomerGrid()
         {
-            // Set font and row height
-            displayGrid.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            displayGrid.BorderStyle = BorderStyle.None;
+            displayGrid.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            displayGrid.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            displayGrid.DefaultCellStyle.SelectionBackColor = Color.FromArgb(46, 51, 73);
+            displayGrid.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            displayGrid.BackgroundColor = Color.White;
+            displayGrid.DefaultCellStyle.ForeColor = Color.Black;
             displayGrid.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+
+            // Column Header Styles
+            displayGrid.EnableHeadersVisualStyles = false;
+            displayGrid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            displayGrid.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(24, 30, 54);
+            displayGrid.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            displayGrid.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI Semibold", 11, FontStyle.Bold);
+
+            // Row Height
             displayGrid.RowTemplate.Height = 30;
 
-            // Header style
-            displayGrid.EnableHeadersVisualStyles = false;
-            displayGrid.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
-            displayGrid.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            displayGrid.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            // Grid lines off (optional)
+            displayGrid.GridColor = Color.LightGray;
 
-            // Row style
-            displayGrid.DefaultCellStyle.BackColor = Color.White;
-            displayGrid.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
-            displayGrid .DefaultCellStyle.SelectionBackColor = Color.DarkSlateBlue;
-            displayGrid .DefaultCellStyle.SelectionForeColor = Color.White;
-
-            // Border style
-            displayGrid.BorderStyle = BorderStyle.None;
-            displayGrid .CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            displayGrid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-
-            // Auto size
+            // Auto size columns
             displayGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            displayGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            displayGrid.MultiSelect = false;
-
-            // ReadOnly
-            displayGrid.ReadOnly = true;
+            displayGrid.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
 
         private void displayGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -192,6 +188,16 @@ namespace Karachi_Showroom_System.Forms
         private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             guna2DateTimePicker1.Value = DateTime.Today;
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

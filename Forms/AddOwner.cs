@@ -84,12 +84,7 @@ namespace Karachi_Showroom_System.Forms
             }
         }
 
-        private void cmbVehicleName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnAddGuna_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             if (cmbVehicleName.SelectedIndex == 0)
             {
@@ -101,8 +96,8 @@ namespace Karachi_Showroom_System.Forms
             {
                 try
                 {
-                    string query = @"INSERT INTO OwnerDetails 
-                (OwnerName, OwnerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, NoPlat, RegFees)
+                    string query = @"INSERT INTO CustomerDetails 
+                (CustomerName, CustomerNIC, PhoneNo, VehicleName, EngineNo, ChasisNo, LicensePlate, RentFees)
                 VALUES 
                 (@OwnerName, @OwnerNIC, @PhoneNo, @VehicleName, @EngineNo, @ChasisNo, @NoPlat, @RegFees)";
 
@@ -123,7 +118,7 @@ namespace Karachi_Showroom_System.Forms
 
                     if (rows > 0)
                     {
-                        MessageBox.Show("Owner added successfully!");
+                        MessageBox.Show("Customer added successfully!");
                         txtOwnerName.Clear();
                         txtNIC.Clear();
                         txtPhone.Clear();
@@ -135,7 +130,7 @@ namespace Karachi_Showroom_System.Forms
                     }
                     else
                     {
-                        MessageBox.Show("Failed to add owner.");
+                        MessageBox.Show("Failed to add Customer.");
                     }
                 }
                 catch (Exception ex)
