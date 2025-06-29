@@ -70,11 +70,17 @@ namespace Karachi_Showroom_System.Forms
                 {
                     con.Open();
 
-                    string query = "SELECT * FROM CustomerDetails WHERE 1=1";
+                    // Select only specific columns
+                    string query = @"SELECT CID, CustomerName, CustomerNIC, PhoneNo, 
+                           VehicleName, EngineNo, ChasisNo, LicensePlate, RentFees, CreatedAt
+                           FROM CustomerDetails WHERE IsArchive = 0";
+
                     if (!string.IsNullOrEmpty(name))
                         query += " AND CustomerName LIKE @name";
                     if (!string.IsNullOrEmpty(phone))
                         query += " AND PhoneNo LIKE @phone";
+
+                    query += " ORDER BY CID DESC";  // Added sorting
 
                     using (MySqlCommand cmd = new MySqlCommand(query, con))
                     {
