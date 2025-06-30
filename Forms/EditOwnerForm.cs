@@ -38,14 +38,14 @@ namespace Karachi_Showroom_System.Forms
                     MySqlDataReader reader = cmd.ExecuteReader();
 
                     cmbVehicleName.Items.Clear();
-                    cmbVehicleName.Items.Add("Select Vehicle ▼"); // placeholder
+                    cmbVehicleName.Items.Add("Select Vehicle ▼"); // Placeholder item
 
                     while (reader.Read())
                     {
                         cmbVehicleName.Items.Add(reader["VehicleName"].ToString());
                     }
 
-                    cmbVehicleName.SelectedIndex = 0;
+                    cmbVehicleName.SelectedIndex = 0; // Default selection
                 }
                 catch (Exception ex)
                 {
@@ -55,38 +55,56 @@ namespace Karachi_Showroom_System.Forms
         }
 
 
-        private void LoadVehicleRates(string vehicleName)
+        private void cmbVehicleName_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbVehicleName.SelectedIndex <= 0)
+            {
+                rdoPerDay.Enabled = rdoPerWeek.Enabled = rdoPerMonth.Enabled = false;
+                rdoPerDay.Text = "Per Day: Rs 0";
+                rdoPerWeek.Text = "Per Week: Rs 0";
+                rdoPerMonth.Text = "Per Month: Rs 0";
+                return;
+            }
+
             using (MySqlConnection con = new MySqlConnection(connString))
             {
-                con.Open();
-                string rateQuery = "SELECT PerDayRate, PerWeekRate, PerMonthRate FROM VehicleRates WHERE VehicleName = @VehicleName";
-                MySqlCommand cmd = new MySqlCommand(rateQuery, con);
-                cmd.Parameters.AddWithValue("@VehicleName", vehicleName);
-
-                using (MySqlDataReader reader = cmd.ExecuteReader())
+                try
                 {
-                    if (reader.Read())
+                    con.Open();
+                    string query = "SELECT PerDayRate, PerWeekRate, PerMonthRate FROM VehicleRates WHERE VehicleName = @VehicleName";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@VehicleName", cmbVehicleName.Text);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
-                        ratePerDay = reader.GetDecimal("PerDayRate");
-                        ratePerWeek = reader.GetDecimal("PerWeekRate");
-                        ratePerMonth = reader.GetDecimal("PerMonthRate");
+                        if (reader.Read())
+                        {
+                            ratePerDay = reader.GetDecimal("PerDayRate");
+                            ratePerWeek = reader.GetDecimal("PerWeekRate");
+                            ratePerMonth = reader.GetDecimal("PerMonthRate");
 
-                        rdoPerDay.Text = $"Per Day: Rs {ratePerDay}";
-                        rdoPerWeek.Text = $"Per Week: Rs {ratePerWeek}";
-                        rdoPerMonth.Text = $"Per Month: Rs {ratePerMonth}";
+                            rdoPerDay.Text = $"Per Day: Rs {ratePerDay:N0}";
+                            rdoPerWeek.Text = $"Per Week: Rs {ratePerWeek:N0}";
+                            rdoPerMonth.Text = $"Per Month: Rs {ratePerMonth:N0}";
 
-                        rdoPerDay.Enabled = rdoPerWeek.Enabled = rdoPerMonth.Enabled = true;
+                            rdoPerDay.Enabled = rdoPerWeek.Enabled = rdoPerMonth.Enabled = true;
+
+                            rdoPerDay.Checked = false;
+                            rdoPerWeek.Checked = false;
+                            rdoPerMonth.Checked = false;
+                        }
                     }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error fetching vehicle rates:\n" + ex.Message);
                 }
             }
         }
 
-        private void cmbVehicleName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbVehicleName.SelectedIndex > 0)
-                LoadVehicleRates(cmbVehicleName.Text);
-        }
+
+
+
 
         private void SearchBtn_Click_1(object sender, EventArgs e)
         {
@@ -118,7 +136,7 @@ namespace Karachi_Showroom_System.Forms
                         }
                         else
                         {
-                            MessageBox.Show("Vehicle from record not found in dropdown.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Vehicle from record not found in dropdown.");
                             cmbVehicleName.SelectedIndex = 0;
                         }
 
@@ -126,10 +144,6 @@ namespace Karachi_Showroom_System.Forms
                         if (rentFees.StartsWith("1 Day")) rdoPerDay.Checked = true;
                         else if (rentFees.StartsWith("1 Week")) rdoPerWeek.Checked = true;
                         else if (rentFees.StartsWith("1 Month")) rdoPerMonth.Checked = true;
-
-                        // Also update the rates for radio button text
-                        LoadVehicleRates(reader["VehicleName"].ToString());
-
                     }
                     else
                     {
@@ -138,7 +152,6 @@ namespace Karachi_Showroom_System.Forms
                 }
             }
 
-            LoadVehicleRates(cmbVehicleName.Text);
         }
 
         private void updateBtn_Click_1(object sender, EventArgs e)
@@ -224,6 +237,7 @@ namespace Karachi_Showroom_System.Forms
         private void EditOwnerForm_Load(object sender, EventArgs e)
         {
             LoadVehicleNames();
+            cmbVehicleName.SelectedIndexChanged += cmbVehicleName_SelectedIndexChanged;
         }
 
         private void btnBack_Click(object sender, EventArgs e)

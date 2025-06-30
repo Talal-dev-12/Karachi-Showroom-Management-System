@@ -31,11 +31,41 @@ namespace Karachi_Showroom_System.Forms
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
-        string connString = "server=localhost;user=root;database=Karachi_motor_showroom;port=3307;password=1234;";
+        string Connection_String = "server=localhost;user=root;database=Karachi_motor_showroom;port=3307;password=1234;";
+
+        private void LoadVehicleRatesGrid()
+        {
+            using (MySqlConnection con = new MySqlConnection(Connection_String))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "SELECT VehicleName, PerDayRate, PerWeekRate, PerMonthRate FROM VehicleRates";
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dgvVehicleRates.DataSource = dt;
+
+                    dgvVehicleRates.ClearSelection(); // Unselect first row
+
+                    // Optional: Rename column headers
+                    dgvVehicleRates.Columns[0].HeaderText = "Vehicle";
+                    dgvVehicleRates.Columns[1].HeaderText = "Per Day";
+                    dgvVehicleRates.Columns[2].HeaderText = "Per Week";
+                    dgvVehicleRates.Columns[3].HeaderText = "Per Month";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Failed to load vehicle data: " + ex.Message);
+                }
+            }
+        }
+
 
         private void AddCar_Load(object sender, EventArgs e)
         {
-
+            LoadVehicleRatesGrid();
+            StyleDataGridView();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -58,7 +88,7 @@ namespace Karachi_Showroom_System.Forms
             }
 
             // Database insert
-            using (MySqlConnection con = new MySqlConnection(connString))
+            using (MySqlConnection con = new MySqlConnection(Connection_String))
             {
                 string query = "INSERT INTO VehicleRates (VehicleName, PerDayRate, PerWeekRate, PerMonthRate) VALUES (@name, @perDay, @perWeek, @perMonth)";
                 MySqlCommand cmd = new MySqlCommand(query, con);
@@ -71,16 +101,21 @@ namespace Karachi_Showroom_System.Forms
                 try
                 {
                     con.Open();
-                    cmd.ExecuteNonQuery();
+                    int rows = cmd.ExecuteNonQuery();
                     con.Close();
+                    if (rows > 0)
+                    {
+                        MessageBox.Show("Vehicle added successfully!", "Success" , MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    MessageBox.Show("Vehicle Added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Clear fields...
+                        txtVehicalName.Clear();
+                        txtVehicalPerdayrate.Clear();
+                        txtVehicalPerWeekrate.Clear();
+                        txtVehicalPerMonthrate.Clear();
 
-                    // Clear input fields
-                    txtVehicalName.Clear();
-                    txtVehicalPerdayrate.Clear();
-                    txtVehicalPerWeekrate.Clear();
-                    txtVehicalPerMonthrate.Clear();
+                        // Refresh grid
+                        LoadVehicleRatesGrid();
+                    }
                 }
                 catch (MySqlException ex)
                 {
@@ -91,6 +126,37 @@ namespace Karachi_Showroom_System.Forms
                 }
             }
         }
+        private void StyleDataGridView()
+        {
+            
+            dgvVehicleRates.BorderStyle = BorderStyle.None;
+            dgvVehicleRates.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dgvVehicleRates.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvVehicleRates.DefaultCellStyle.SelectionBackColor = Color.FromArgb(46, 51, 73);
+            dgvVehicleRates.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dgvVehicleRates.BackgroundColor = Color.White;
+            dgvVehicleRates.DefaultCellStyle.ForeColor = Color.Black;
+            dgvVehicleRates.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            // check check
+            // Column Header Styles
+            dgvVehicleRates.EnableHeadersVisualStyles = false;
+            dgvVehicleRates.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvVehicleRates.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(24, 30, 54);
+            dgvVehicleRates.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvVehicleRates.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI Semibold", 11, FontStyle.Bold);
+            dgvVehicleRates.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            // Row Height
+            dgvVehicleRates.RowTemplate.Height = 30;
+
+            // Grid lines off (optional)
+            dgvVehicleRates.GridColor = Color.LightGray;
+
+            // Auto size columns
+            dgvVehicleRates.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvVehicleRates.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        }
+
 
         private void btnBack_Click(object sender, EventArgs e)
         {

@@ -238,11 +238,5 @@ VALUES
                 }
             }
         }
-        private void BtnTest_Click(object sender, EventArgs e)
-        {
-            if (rdoPerDay.Checked) MessageBox.Show("Per Day selected");
-            if (rdoPerWeek.Checked) MessageBox.Show("Per Week selected");
-            if (rdoPerMonth.Checked) MessageBox.Show("Per Month selected");
-        }
     }
 }
