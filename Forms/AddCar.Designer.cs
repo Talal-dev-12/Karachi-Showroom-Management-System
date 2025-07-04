@@ -61,9 +61,10 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(181, 106);
+            this.panel1.Location = new System.Drawing.Point(241, 130);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(486, 299);
+            this.panel1.Size = new System.Drawing.Size(648, 368);
             this.panel1.TabIndex = 21;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -76,10 +77,10 @@
             this.btnAddCar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddCar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddCar.ForeColor = System.Drawing.Color.White;
-            this.btnAddCar.Location = new System.Drawing.Point(174, 245);
-            this.btnAddCar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddCar.Location = new System.Drawing.Point(232, 302);
+            this.btnAddCar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddCar.Name = "btnAddCar";
-            this.btnAddCar.Size = new System.Drawing.Size(135, 37);
+            this.btnAddCar.Size = new System.Drawing.Size(180, 46);
             this.btnAddCar.TabIndex = 3;
             this.btnAddCar.Text = "Add Car";
             this.btnAddCar.Click += new System.EventHandler(this.btnAddCar_Click);
@@ -96,12 +97,12 @@
             this.txtVehicalPerMonthrate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtVehicalPerMonthrate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVehicalPerMonthrate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtVehicalPerMonthrate.Location = new System.Drawing.Point(209, 174);
-            this.txtVehicalPerMonthrate.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtVehicalPerMonthrate.Location = new System.Drawing.Point(279, 214);
+            this.txtVehicalPerMonthrate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtVehicalPerMonthrate.Name = "txtVehicalPerMonthrate";
             this.txtVehicalPerMonthrate.PlaceholderText = "";
             this.txtVehicalPerMonthrate.SelectedText = "";
-            this.txtVehicalPerMonthrate.Size = new System.Drawing.Size(186, 31);
+            this.txtVehicalPerMonthrate.Size = new System.Drawing.Size(248, 38);
             this.txtVehicalPerMonthrate.TabIndex = 2;
             // 
             // txtVehicalPerWeekrate
@@ -116,12 +117,12 @@
             this.txtVehicalPerWeekrate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtVehicalPerWeekrate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVehicalPerWeekrate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtVehicalPerWeekrate.Location = new System.Drawing.Point(209, 123);
-            this.txtVehicalPerWeekrate.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtVehicalPerWeekrate.Location = new System.Drawing.Point(279, 151);
+            this.txtVehicalPerWeekrate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtVehicalPerWeekrate.Name = "txtVehicalPerWeekrate";
             this.txtVehicalPerWeekrate.PlaceholderText = "";
             this.txtVehicalPerWeekrate.SelectedText = "";
-            this.txtVehicalPerWeekrate.Size = new System.Drawing.Size(186, 31);
+            this.txtVehicalPerWeekrate.Size = new System.Drawing.Size(248, 38);
             this.txtVehicalPerWeekrate.TabIndex = 2;
             // 
             // txtVehicalName
@@ -136,12 +137,12 @@
             this.txtVehicalName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtVehicalName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVehicalName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtVehicalName.Location = new System.Drawing.Point(209, 17);
-            this.txtVehicalName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtVehicalName.Location = new System.Drawing.Point(279, 21);
+            this.txtVehicalName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtVehicalName.Name = "txtVehicalName";
             this.txtVehicalName.PlaceholderText = "";
             this.txtVehicalName.SelectedText = "";
-            this.txtVehicalName.Size = new System.Drawing.Size(186, 31);
+            this.txtVehicalName.Size = new System.Drawing.Size(248, 38);
             this.txtVehicalName.TabIndex = 2;
             // 
             // txtVehicalPerdayrate
@@ -156,12 +157,12 @@
             this.txtVehicalPerdayrate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtVehicalPerdayrate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVehicalPerdayrate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtVehicalPerdayrate.Location = new System.Drawing.Point(209, 68);
-            this.txtVehicalPerdayrate.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtVehicalPerdayrate.Location = new System.Drawing.Point(279, 84);
+            this.txtVehicalPerdayrate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtVehicalPerdayrate.Name = "txtVehicalPerdayrate";
             this.txtVehicalPerdayrate.PlaceholderText = "";
             this.txtVehicalPerdayrate.SelectedText = "";
-            this.txtVehicalPerdayrate.Size = new System.Drawing.Size(186, 31);
+            this.txtVehicalPerdayrate.Size = new System.Drawing.Size(248, 38);
             this.txtVehicalPerdayrate.TabIndex = 2;
             // 
             // label1
@@ -170,10 +171,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(65, 68);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(87, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 20);
+            this.label1.Size = new System.Drawing.Size(133, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "PerDay Rate :";
             // 
@@ -183,10 +183,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(62, 174);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(83, 214);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 20);
+            this.label3.Size = new System.Drawing.Size(158, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "Per Month Rate :";
             // 
@@ -196,10 +195,9 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(61, 22);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(81, 27);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(115, 20);
+            this.label8.Size = new System.Drawing.Size(145, 25);
             this.label8.TabIndex = 0;
             this.label8.Text = "Vehicle Name :";
             // 
@@ -209,10 +207,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(62, 124);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(83, 153);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 20);
+            this.label2.Size = new System.Drawing.Size(150, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Per Week Rate:";
             // 
@@ -223,9 +220,8 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(854, 94);
+            this.label10.Size = new System.Drawing.Size(1139, 116);
             this.label10.TabIndex = 18;
             this.label10.Text = "Add Car Details ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -243,9 +239,10 @@
             this.btnBack.Image = global::Karachi_Showroom_System.Properties.Resources.back;
             this.btnBack.ImageSize = new System.Drawing.Size(50, 50);
             this.btnBack.Location = new System.Drawing.Point(1, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
             this.btnBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnBack.Size = new System.Drawing.Size(60, 79);
+            this.btnBack.Size = new System.Drawing.Size(80, 97);
             this.btnBack.TabIndex = 22;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
@@ -255,10 +252,11 @@
             this.BtnExit.FillColor = System.Drawing.Color.Transparent;
             this.BtnExit.Image = global::Karachi_Showroom_System.Properties.Resources.Exit;
             this.BtnExit.ImageRotate = 0F;
-            this.BtnExit.Location = new System.Drawing.Point(803, 0);
+            this.BtnExit.Location = new System.Drawing.Point(1071, 0);
+            this.BtnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.BtnExit.Size = new System.Drawing.Size(46, 46);
+            this.BtnExit.Size = new System.Drawing.Size(61, 57);
             this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnExit.TabIndex = 23;
             this.BtnExit.TabStop = false;
@@ -270,42 +268,43 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightGray;
-            this.label4.Location = new System.Drawing.Point(0, 706);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(0, 869);
             this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(0, 0, 5, 5);
-            this.label4.Size = new System.Drawing.Size(854, 57);
+            this.label4.Padding = new System.Windows.Forms.Padding(0, 0, 7, 6);
+            this.label4.Size = new System.Drawing.Size(1139, 70);
             this.label4.TabIndex = 18;
-            this.label4.Text = "DBMS LAB PROJECT";
+            this.label4.Text = "DBMS PROJECT";
             this.label4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // dgvVehicleRates
             // 
             this.dgvVehicleRates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVehicleRates.Location = new System.Drawing.Point(12, 470);
+            this.dgvVehicleRates.Location = new System.Drawing.Point(16, 578);
+            this.dgvVehicleRates.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvVehicleRates.Name = "dgvVehicleRates";
-            this.dgvVehicleRates.Size = new System.Drawing.Size(830, 221);
+            this.dgvVehicleRates.RowHeadersWidth = 51;
+            this.dgvVehicleRates.Size = new System.Drawing.Size(1107, 272);
             this.dgvVehicleRates.TabIndex = 24;
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1, 423);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(1, 521);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(853, 35);
+            this.label5.Size = new System.Drawing.Size(1137, 43);
             this.label5.TabIndex = 0;
             this.label5.Text = "Car Rent Rates";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AddCar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(854, 763);
+            this.ClientSize = new System.Drawing.Size(1139, 939);
             this.Controls.Add(this.dgvVehicleRates);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.btnBack);
@@ -314,7 +313,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddCar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCar";

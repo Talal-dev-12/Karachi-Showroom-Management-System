@@ -17,7 +17,7 @@ namespace Karachi_Showroom_System
         {
              Application.EnableVisualStyles();
              Application.SetCompatibleTextRenderingDefault(false);
-             Application.Run(new AddCar());
+             Application.Run(new LoginPage());
         }
     }
 }

@@ -181,5 +181,10 @@ namespace Karachi_Showroom_System.Forms
                 Application.Exit();
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
